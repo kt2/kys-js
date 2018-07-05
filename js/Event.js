@@ -897,7 +897,7 @@
         if (incx) {
             var i = x0;
             var f = function(){
-                if (this.j.subscene.current_frame % this.j.subscene.frame_rate == 0) {
+                if (this.j.subscene.current_frame % g.frame_rate == 0) {
                     i += incx;
                     this.j.subscene.tryWalk(i, y0);
                     this.j.subscene.towards = this.j.subscene.calTowards(x0, y0, i, y0);
@@ -912,7 +912,7 @@
         if (incy) {
             var i = y0;
             var f = function(){
-                if (this.j.subscene.current_frame % this.j.subscene.frame_rate == 0) {
+                if (this.j.subscene.current_frame % g.frame_rate == 0) {
                     i += incy;
                     this.j.subscene.tryWalk(x1, i);
                     this.j.subscene.towards = this.j.subscene.calTowards(x1, y0, x1, i);
